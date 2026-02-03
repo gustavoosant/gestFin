@@ -43,9 +43,9 @@ Desenvolver uma aplicação backend em Java para:
 - **Git** – Controle de versão
 - **Postman** – Testes dos endpoints REST
 
-📄 Licença
+### 📄 Licença
 Este projeto foi desenvolvido para fins educacionais e de estudo em Java / Spring Boot.
 Sinta-se à vontade para adaptar, evoluir e reutilizar o código conforme necessário.
 
-👤 Autor
+### 👤 Autor
 Projeto desenvolvido por [Gustavo Henrique Santiago Haussmann Nuss] como parte de estudos e prática em desenvolvimento backend com Java e Spring Boot.
