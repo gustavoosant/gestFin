@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "movimentacao")
-public class movimentacaoModel {
+public class MovimentacaoModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,11 +35,11 @@ public class movimentacaoModel {
 
     @ManyToOne
     @JoinColumn(name = "usuario_id_usuario")
-    private usuarioModel usuario;
+    private UsuarioModel usuario;
 
     @ManyToOne
     @JoinColumn(name = "conta_id_conta")
-    private contaModel conta;
+    private ContaModel conta;
 
     public Integer getIdMovimentacao() {
         return idMovimentacao;
@@ -103,19 +103,19 @@ public class movimentacaoModel {
         this.dividido = dividido;
     }
 
-    public usuarioModel getUsuario() {
+    public UsuarioModel getUsuario() {
         return usuario;
     }
 
-    public void setUsuario(usuarioModel usuario) {
+    public void setUsuario(UsuarioModel usuario) {
         this.usuario = usuario;
     }
 
-    public contaModel getConta() {
+    public ContaModel getConta() {
         return conta;
     }
 
-    public void setConta(contaModel conta) {
+    public void setConta(ContaModel conta) {
         this.conta = conta;
     }
 }

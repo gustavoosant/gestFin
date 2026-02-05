@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "conta")
-public class contaModel {
+public class ContaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,7 +19,7 @@ public class contaModel {
 
     @ManyToOne
     @JoinColumn(name = "usuario_id_usuario")
-    private usuarioModel usuario;
+    private UsuarioModel usuario;
 
     public Integer getIdConta() {
         return idConta;
@@ -45,11 +45,11 @@ public class contaModel {
         this.tipoConta = tipoConta;
     }
 
-    public usuarioModel getId_usuario() {
+    public UsuarioModel getId_usuario() {
         return usuario;
     }
 
-    public void setId_usuario(usuarioModel usuario) {
+    public void setId_usuario(UsuarioModel usuario) {
         this.usuario = usuario;
     }
 }
